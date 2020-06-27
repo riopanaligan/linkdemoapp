@@ -35,4 +35,17 @@ Public Class DatabaseUtility
             Throw New Exception(ex.Message)
         End Try
     End Function
+
+    Public Function ExecuteDataReader(ByVal query As String) As DataTable
+        Try
+            ConnectMysql()
+            Dim ResultTable As New DataTable
+            Dim sqlAdapter = New MySqlDataAdapter(query, conn)
+            sqlAdapter.Fill(ResultTable)
+
+            Return ResultTable
+        Catch ex As Exception
+            Throw New Exception(ex.Message)
+        End Try
+    End Function
 End Class

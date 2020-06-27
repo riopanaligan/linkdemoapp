@@ -36,13 +36,42 @@ Partial Class BiddingPage
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.dgvOpenBids = New System.Windows.Forms.DataGridView()
+        Me.ReferenceNo = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Createdby = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateCreated = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClosingDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.InvitationType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Responds = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Action = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.dgvClosedBids = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.dgvBidInvitations = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewButtonColumn1 = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.dgvBidEvaluation = New System.Windows.Forms.DataGridView()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -53,32 +82,34 @@ Partial Class BiddingPage
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ReferenceNo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Createdby = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DateCreated = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClosingDate = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.InvitationType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Responds = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Action = New System.Windows.Forms.DataGridViewButtonColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewComboBoxColumn()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        CType(Me.dgvOpenBids, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
+        CType(Me.dgvClosedBids, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
+        CType(Me.dgvBidInvitations, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
+        CType(Me.dgvBidEvaluation, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel3
@@ -104,7 +135,7 @@ Partial Class BiddingPage
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Nasalization Rg", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(86, 5)
+        Me.Label7.Location = New System.Drawing.Point(86, 9)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(64, 25)
         Me.Label7.TabIndex = 4
@@ -114,7 +145,7 @@ Partial Class BiddingPage
         '
         Me.lblUserHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblUserHeader.ForeColor = System.Drawing.Color.White
-        Me.lblUserHeader.Location = New System.Drawing.Point(1123, 6)
+        Me.lblUserHeader.Location = New System.Drawing.Point(1123, 10)
         Me.lblUserHeader.Name = "lblUserHeader"
         Me.lblUserHeader.Size = New System.Drawing.Size(106, 20)
         Me.lblUserHeader.TabIndex = 13
@@ -126,7 +157,7 @@ Partial Class BiddingPage
         Me.lblBiddingHeader.AutoSize = True
         Me.lblBiddingHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBiddingHeader.ForeColor = System.Drawing.Color.White
-        Me.lblBiddingHeader.Location = New System.Drawing.Point(572, 8)
+        Me.lblBiddingHeader.Location = New System.Drawing.Point(572, 12)
         Me.lblBiddingHeader.Name = "lblBiddingHeader"
         Me.lblBiddingHeader.Size = New System.Drawing.Size(54, 17)
         Me.lblBiddingHeader.TabIndex = 20
@@ -138,7 +169,7 @@ Partial Class BiddingPage
         Me.lblProcureHeader.AutoSize = True
         Me.lblProcureHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblProcureHeader.ForeColor = System.Drawing.Color.White
-        Me.lblProcureHeader.Location = New System.Drawing.Point(672, 8)
+        Me.lblProcureHeader.Location = New System.Drawing.Point(672, 12)
         Me.lblProcureHeader.Name = "lblProcureHeader"
         Me.lblProcureHeader.Size = New System.Drawing.Size(55, 17)
         Me.lblProcureHeader.TabIndex = 21
@@ -150,7 +181,7 @@ Partial Class BiddingPage
         Me.lblHomeHeader.AutoSize = True
         Me.lblHomeHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHomeHeader.ForeColor = System.Drawing.Color.White
-        Me.lblHomeHeader.Location = New System.Drawing.Point(237, 8)
+        Me.lblHomeHeader.Location = New System.Drawing.Point(237, 12)
         Me.lblHomeHeader.Name = "lblHomeHeader"
         Me.lblHomeHeader.Size = New System.Drawing.Size(45, 17)
         Me.lblHomeHeader.TabIndex = 27
@@ -162,7 +193,7 @@ Partial Class BiddingPage
         Me.lblPaymentHeader.AutoSize = True
         Me.lblPaymentHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPaymentHeader.ForeColor = System.Drawing.Color.White
-        Me.lblPaymentHeader.Location = New System.Drawing.Point(777, 8)
+        Me.lblPaymentHeader.Location = New System.Drawing.Point(777, 12)
         Me.lblPaymentHeader.Name = "lblPaymentHeader"
         Me.lblPaymentHeader.Size = New System.Drawing.Size(62, 17)
         Me.lblPaymentHeader.TabIndex = 22
@@ -174,7 +205,7 @@ Partial Class BiddingPage
         Me.lblProfileHeader.AutoSize = True
         Me.lblProfileHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblProfileHeader.ForeColor = System.Drawing.Color.White
-        Me.lblProfileHeader.Location = New System.Drawing.Point(332, 8)
+        Me.lblProfileHeader.Location = New System.Drawing.Point(332, 12)
         Me.lblProfileHeader.Name = "lblProfileHeader"
         Me.lblProfileHeader.Size = New System.Drawing.Size(46, 17)
         Me.lblProfileHeader.TabIndex = 26
@@ -186,7 +217,7 @@ Partial Class BiddingPage
         Me.lblAccountingHeader.AutoSize = True
         Me.lblAccountingHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAccountingHeader.ForeColor = System.Drawing.Color.White
-        Me.lblAccountingHeader.Location = New System.Drawing.Point(888, 8)
+        Me.lblAccountingHeader.Location = New System.Drawing.Point(888, 12)
         Me.lblAccountingHeader.Name = "lblAccountingHeader"
         Me.lblAccountingHeader.Size = New System.Drawing.Size(77, 17)
         Me.lblAccountingHeader.TabIndex = 23
@@ -198,7 +229,7 @@ Partial Class BiddingPage
         Me.lblBusinessCentreHeader.AutoSize = True
         Me.lblBusinessCentreHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBusinessCentreHeader.ForeColor = System.Drawing.Color.White
-        Me.lblBusinessCentreHeader.Location = New System.Drawing.Point(423, 8)
+        Me.lblBusinessCentreHeader.Location = New System.Drawing.Point(423, 12)
         Me.lblBusinessCentreHeader.Name = "lblBusinessCentreHeader"
         Me.lblBusinessCentreHeader.Size = New System.Drawing.Size(104, 17)
         Me.lblBusinessCentreHeader.TabIndex = 25
@@ -210,7 +241,7 @@ Partial Class BiddingPage
         Me.lblSettingsHeader.AutoSize = True
         Me.lblSettingsHeader.Font = New System.Drawing.Font("Microsoft JhengHei", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSettingsHeader.ForeColor = System.Drawing.Color.White
-        Me.lblSettingsHeader.Location = New System.Drawing.Point(1010, 8)
+        Me.lblSettingsHeader.Location = New System.Drawing.Point(1010, 12)
         Me.lblSettingsHeader.Name = "lblSettingsHeader"
         Me.lblSettingsHeader.Size = New System.Drawing.Size(57, 17)
         Me.lblSettingsHeader.TabIndex = 24
@@ -242,7 +273,7 @@ Partial Class BiddingPage
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.DataGridView1)
+        Me.TabPage1.Controls.Add(Me.dgvOpenBids)
         Me.TabPage1.Location = New System.Drawing.Point(4, 25)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
@@ -251,8 +282,78 @@ Partial Class BiddingPage
         Me.TabPage1.Text = "TabPage1"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'dgvOpenBids
+        '
+        Me.dgvOpenBids.AllowUserToAddRows = False
+        Me.dgvOpenBids.AllowUserToDeleteRows = False
+        Me.dgvOpenBids.BackgroundColor = System.Drawing.Color.White
+        Me.dgvOpenBids.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvOpenBids.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ReferenceNo, Me.Column1, Me.Createdby, Me.DateCreated, Me.ClosingDate, Me.InvitationType, Me.Responds, Me.Action})
+        Me.dgvOpenBids.Location = New System.Drawing.Point(34, 11)
+        Me.dgvOpenBids.Name = "dgvOpenBids"
+        Me.dgvOpenBids.ReadOnly = True
+        Me.dgvOpenBids.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvOpenBids.Size = New System.Drawing.Size(1225, 473)
+        Me.dgvOpenBids.TabIndex = 0
+        '
+        'ReferenceNo
+        '
+        Me.ReferenceNo.HeaderText = "Reference No"
+        Me.ReferenceNo.Name = "ReferenceNo"
+        Me.ReferenceNo.ReadOnly = True
+        Me.ReferenceNo.Width = 150
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Bid Title"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 500
+        '
+        'Createdby
+        '
+        Me.Createdby.HeaderText = "Created by"
+        Me.Createdby.Name = "Createdby"
+        Me.Createdby.ReadOnly = True
+        Me.Createdby.Width = 200
+        '
+        'DateCreated
+        '
+        Me.DateCreated.HeaderText = "Date Created"
+        Me.DateCreated.Name = "DateCreated"
+        Me.DateCreated.ReadOnly = True
+        Me.DateCreated.Width = 150
+        '
+        'ClosingDate
+        '
+        Me.ClosingDate.HeaderText = "Closing Date"
+        Me.ClosingDate.Name = "ClosingDate"
+        Me.ClosingDate.ReadOnly = True
+        Me.ClosingDate.Width = 150
+        '
+        'InvitationType
+        '
+        Me.InvitationType.HeaderText = "Invitation Type"
+        Me.InvitationType.Name = "InvitationType"
+        Me.InvitationType.ReadOnly = True
+        Me.InvitationType.Width = 150
+        '
+        'Responds
+        '
+        Me.Responds.HeaderText = "Responds"
+        Me.Responds.Name = "Responds"
+        Me.Responds.ReadOnly = True
+        '
+        'Action
+        '
+        Me.Action.HeaderText = "Action"
+        Me.Action.Name = "Action"
+        Me.Action.ReadOnly = True
+        Me.Action.Width = 200
+        '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.dgvClosedBids)
         Me.TabPage2.Controls.Add(Me.Label6)
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Name = "TabPage2"
@@ -261,6 +362,68 @@ Partial Class BiddingPage
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "TabPage2"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'dgvClosedBids
+        '
+        Me.dgvClosedBids.AllowUserToAddRows = False
+        Me.dgvClosedBids.AllowUserToDeleteRows = False
+        Me.dgvClosedBids.BackgroundColor = System.Drawing.Color.White
+        Me.dgvClosedBids.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvClosedBids.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.Column2, Me.DataGridViewTextBoxColumn6})
+        Me.dgvClosedBids.Location = New System.Drawing.Point(34, 11)
+        Me.dgvClosedBids.Name = "dgvClosedBids"
+        Me.dgvClosedBids.ReadOnly = True
+        Me.dgvClosedBids.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvClosedBids.Size = New System.Drawing.Size(1225, 473)
+        Me.dgvClosedBids.TabIndex = 3
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Reference No"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        Me.DataGridViewTextBoxColumn1.Width = 150
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Bid Title"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Width = 500
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Created by"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        Me.DataGridViewTextBoxColumn3.ReadOnly = True
+        Me.DataGridViewTextBoxColumn3.Width = 200
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Date Created"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        Me.DataGridViewTextBoxColumn4.ReadOnly = True
+        Me.DataGridViewTextBoxColumn4.Width = 120
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Date Closed"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.DataGridViewTextBoxColumn5.ReadOnly = True
+        Me.DataGridViewTextBoxColumn5.Width = 120
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Status"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Bid Winner"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.DataGridViewTextBoxColumn6.ReadOnly = True
+        Me.DataGridViewTextBoxColumn6.Width = 150
         '
         'Label6
         '
@@ -274,14 +437,85 @@ Partial Class BiddingPage
         '
         'TabPage3
         '
+        Me.TabPage3.Controls.Add(Me.dgvBidInvitations)
         Me.TabPage3.Controls.Add(Me.Label8)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1287, 530)
+        Me.TabPage3.Size = New System.Drawing.Size(1287, 527)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "TabPage3"
         Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'dgvBidInvitations
+        '
+        Me.dgvBidInvitations.AllowUserToAddRows = False
+        Me.dgvBidInvitations.AllowUserToDeleteRows = False
+        Me.dgvBidInvitations.BackgroundColor = System.Drawing.Color.White
+        Me.dgvBidInvitations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvBidInvitations.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.Column3, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewButtonColumn1})
+        Me.dgvBidInvitations.Location = New System.Drawing.Point(34, 11)
+        Me.dgvBidInvitations.Name = "dgvBidInvitations"
+        Me.dgvBidInvitations.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvBidInvitations.Size = New System.Drawing.Size(1225, 473)
+        Me.dgvBidInvitations.TabIndex = 4
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Reference No"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        Me.DataGridViewTextBoxColumn7.ReadOnly = True
+        Me.DataGridViewTextBoxColumn7.Width = 150
+        '
+        'DataGridViewTextBoxColumn8
+        '
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Bid Title"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
+        Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 500
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Created by"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        Me.DataGridViewTextBoxColumn9.Width = 200
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Company"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Width = 200
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Date Created"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.ReadOnly = True
+        Me.DataGridViewTextBoxColumn10.Width = 120
+        '
+        'DataGridViewTextBoxColumn11
+        '
+        Me.DataGridViewTextBoxColumn11.HeaderText = "Closing Date"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
+        Me.DataGridViewTextBoxColumn11.ReadOnly = True
+        Me.DataGridViewTextBoxColumn11.Width = 120
+        '
+        'DataGridViewTextBoxColumn12
+        '
+        Me.DataGridViewTextBoxColumn12.HeaderText = "Invitation Type"
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
+        Me.DataGridViewTextBoxColumn12.ReadOnly = True
+        Me.DataGridViewTextBoxColumn12.Width = 150
+        '
+        'DataGridViewButtonColumn1
+        '
+        Me.DataGridViewButtonColumn1.HeaderText = "Action"
+        Me.DataGridViewButtonColumn1.Items.AddRange(New Object() {"Reject", "Send Quotation"})
+        Me.DataGridViewButtonColumn1.Name = "DataGridViewButtonColumn1"
+        Me.DataGridViewButtonColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridViewButtonColumn1.Width = 200
         '
         'Label8
         '
@@ -295,14 +529,44 @@ Partial Class BiddingPage
         '
         'TabPage4
         '
+        Me.TabPage4.Controls.Add(Me.Button2)
+        Me.TabPage4.Controls.Add(Me.dgvBidEvaluation)
         Me.TabPage4.Controls.Add(Me.Label9)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 25)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1287, 530)
+        Me.TabPage4.Size = New System.Drawing.Size(1287, 527)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "TabPage4"
         Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(73, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(34, 459)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(270, 30)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Compare Selected Items"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'dgvBidEvaluation
+        '
+        Me.dgvBidEvaluation.AllowUserToAddRows = False
+        Me.dgvBidEvaluation.AllowUserToDeleteRows = False
+        Me.dgvBidEvaluation.AllowUserToResizeRows = False
+        Me.dgvBidEvaluation.BackgroundColor = System.Drawing.Color.White
+        Me.dgvBidEvaluation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvBidEvaluation.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column8, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.Column5, Me.Column6, Me.Column7, Me.Column4})
+        Me.dgvBidEvaluation.Location = New System.Drawing.Point(34, 11)
+        Me.dgvBidEvaluation.Name = "dgvBidEvaluation"
+        Me.dgvBidEvaluation.RowHeadersVisible = False
+        Me.dgvBidEvaluation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvBidEvaluation.Size = New System.Drawing.Size(1225, 442)
+        Me.dgvBidEvaluation.TabIndex = 5
         '
         'Label9
         '
@@ -329,6 +593,16 @@ Partial Class BiddingPage
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1285, 75)
         Me.Panel2.TabIndex = 1
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.PictureBox4.Location = New System.Drawing.Point(349, 46)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(116, 2)
+        Me.PictureBox4.TabIndex = 8
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
         '
         'PictureBox3
         '
@@ -435,16 +709,6 @@ Partial Class BiddingPage
         Me.Label26.TabIndex = 35
         Me.Label26.Text = "BIDDING "
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.LightSkyBlue
-        Me.PictureBox4.Location = New System.Drawing.Point(349, 46)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(116, 2)
-        Me.PictureBox4.TabIndex = 8
-        Me.PictureBox4.TabStop = False
-        Me.PictureBox4.Visible = False
-        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.DarkGray
@@ -467,58 +731,61 @@ Partial Class BiddingPage
         Me.Panel5.Size = New System.Drawing.Size(1370, 428)
         Me.Panel5.TabIndex = 38
         '
-        'DataGridView1
+        'Column8
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ReferenceNo, Me.Column1, Me.Createdby, Me.DateCreated, Me.ClosingDate, Me.InvitationType, Me.Responds, Me.Action})
-        Me.DataGridView1.Location = New System.Drawing.Point(34, 11)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(1225, 473)
-        Me.DataGridView1.TabIndex = 0
+        Me.Column8.Frozen = True
+        Me.Column8.HeaderText = ""
+        Me.Column8.Name = "Column8"
+        Me.Column8.Width = 30
         '
-        'ReferenceNo
+        'DataGridViewTextBoxColumn13
         '
-        Me.ReferenceNo.HeaderText = "Reference No"
-        Me.ReferenceNo.Name = "ReferenceNo"
+        Me.DataGridViewTextBoxColumn13.Frozen = True
+        Me.DataGridViewTextBoxColumn13.HeaderText = "Bid Reference No"
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
+        Me.DataGridViewTextBoxColumn13.Width = 150
         '
-        'Column1
+        'DataGridViewTextBoxColumn14
         '
-        Me.Column1.HeaderText = "Bid Title"
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 500
+        Me.DataGridViewTextBoxColumn14.HeaderText = "Bid Title"
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        Me.DataGridViewTextBoxColumn14.Width = 500
         '
-        'Createdby
+        'DataGridViewTextBoxColumn17
         '
-        Me.Createdby.HeaderText = "Created by"
-        Me.Createdby.Name = "Createdby"
-        Me.Createdby.Width = 200
+        Me.DataGridViewTextBoxColumn17.HeaderText = "Date Created"
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
+        Me.DataGridViewTextBoxColumn17.Width = 120
         '
-        'DateCreated
+        'DataGridViewTextBoxColumn18
         '
-        Me.DateCreated.HeaderText = "Date Created"
-        Me.DateCreated.Name = "DateCreated"
+        Me.DataGridViewTextBoxColumn18.HeaderText = "Closing Date"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.Width = 120
         '
-        'ClosingDate
+        'Column5
         '
-        Me.ClosingDate.HeaderText = "Closing Date"
-        Me.ClosingDate.Name = "ClosingDate"
+        Me.Column5.HeaderText = "Quotation Ref No"
+        Me.Column5.Name = "Column5"
+        Me.Column5.Width = 150
         '
-        'InvitationType
+        'Column6
         '
-        Me.InvitationType.HeaderText = "Invitation Type"
-        Me.InvitationType.Name = "InvitationType"
+        Me.Column6.HeaderText = "Company"
+        Me.Column6.Name = "Column6"
+        Me.Column6.Width = 200
         '
-        'Responds
+        'Column7
         '
-        Me.Responds.HeaderText = "Responds"
-        Me.Responds.Name = "Responds"
+        Me.Column7.HeaderText = "Contact Person"
+        Me.Column7.Name = "Column7"
+        Me.Column7.Width = 200
         '
-        'Action
+        'Column4
         '
-        Me.Action.HeaderText = "Action"
-        Me.Action.Name = "Action"
-        Me.Action.Width = 200
+        Me.Column4.HeaderText = "Rating"
+        Me.Column4.Items.AddRange(New Object() {"☆☆☆☆☆", "★☆☆☆☆", "★★☆☆☆", "★★★☆☆", "★★★★☆", "★★★★★"})
+        Me.Column4.Name = "Column4"
         '
         'BiddingPage
         '
@@ -534,21 +801,24 @@ Partial Class BiddingPage
         Me.Panel1.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
+        CType(Me.dgvOpenBids, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        CType(Me.dgvClosedBids, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
+        CType(Me.dgvBidInvitations, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
+        CType(Me.dgvBidEvaluation, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -587,7 +857,7 @@ Partial Class BiddingPage
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvOpenBids As DataGridView
     Friend WithEvents ReferenceNo As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Createdby As DataGridViewTextBoxColumn
@@ -596,4 +866,32 @@ Partial Class BiddingPage
     Friend WithEvents InvitationType As DataGridViewTextBoxColumn
     Friend WithEvents Responds As DataGridViewTextBoxColumn
     Friend WithEvents Action As DataGridViewButtonColumn
+    Friend WithEvents dgvClosedBids As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
+    Friend WithEvents dgvBidInvitations As DataGridView
+    Friend WithEvents dgvBidEvaluation As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewButtonColumn1 As DataGridViewComboBoxColumn
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Column8 As DataGridViewCheckBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewComboBoxColumn
 End Class

@@ -31,3 +31,6 @@ C:\Users\prioj\source\repos\DemoApp\DemoApp\obj\Debug\DemoApp.vbproj.CopyComplet
 C:\Users\prioj\source\repos\DemoApp\DemoApp\obj\Debug\DemoApp.exe
 C:\Users\prioj\source\repos\DemoApp\DemoApp\obj\Debug\DemoApp.xml
 C:\Users\prioj\source\repos\DemoApp\DemoApp\obj\Debug\DemoApp.pdb
+C:\Users\prioj\source\repos\DemoApp\DemoApp\obj\Debug\DemoApp.BidEvaluation.resources
+C:\Users\prioj\source\repos\DemoApp\DemoApp\obj\Debug\DemoApp.QuotationDetails.resources
+C:\Users\prioj\source\repos\DemoApp\DemoApp\obj\Debug\DemoApp.CreateQuotation.resources

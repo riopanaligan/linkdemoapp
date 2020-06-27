@@ -12,4 +12,14 @@
             Me.Hide()
         End If
     End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
+        If e.KeyChar = vbCr Then
+            Button1_Click(sender, e)
+        End If
+    End Sub
 End Class

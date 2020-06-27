@@ -67,9 +67,9 @@ Partial Class Login
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(3, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(230, Byte), Integer))
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(314, 170)
+        Me.Button1.Location = New System.Drawing.Point(314, 169)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(223, 25)
         Me.Button1.TabIndex = 8
@@ -79,7 +79,7 @@ Partial Class Login
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(315, 152)
+        Me.LinkLabel1.Location = New System.Drawing.Point(315, 151)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(108, 13)
         Me.LinkLabel1.TabIndex = 7
@@ -90,7 +90,7 @@ Partial Class Login
         '
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(315, 121)
+        Me.TextBox2.Location = New System.Drawing.Point(315, 120)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox2.Size = New System.Drawing.Size(223, 22)
@@ -100,7 +100,7 @@ Partial Class Login
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(314, 79)
+        Me.TextBox1.Location = New System.Drawing.Point(314, 78)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(223, 22)
         Me.TextBox1.TabIndex = 5
@@ -111,7 +111,7 @@ Partial Class Login
         Me.Label4.BackColor = System.Drawing.Color.Black
         Me.Label4.Font = New System.Drawing.Font("Microsoft JhengHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(311, 102)
+        Me.Label4.Location = New System.Drawing.Point(311, 101)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 16)
         Me.Label4.TabIndex = 4
@@ -123,7 +123,7 @@ Partial Class Login
         Me.Label3.BackColor = System.Drawing.Color.Black
         Me.Label3.Font = New System.Drawing.Font("Microsoft JhengHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(311, 61)
+        Me.Label3.Location = New System.Drawing.Point(311, 60)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(65, 16)
         Me.Label3.TabIndex = 3
@@ -135,7 +135,7 @@ Partial Class Login
         Me.Label2.BackColor = System.Drawing.Color.Black
         Me.Label2.Font = New System.Drawing.Font("Microsoft JhengHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(311, 29)
+        Me.Label2.Location = New System.Drawing.Point(311, 28)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(174, 20)
         Me.Label2.TabIndex = 2

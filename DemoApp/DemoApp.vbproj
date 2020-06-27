@@ -75,13 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\DatabaseUtility.vb" />
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -110,10 +103,22 @@
     <Compile Include="UI\BiddingPage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UI\BidEvaluation.Designer.vb">
+      <DependentUpon>BidEvaluation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BidEvaluation.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI\CreateBidInvitation.Designer.vb">
       <DependentUpon>CreateBidInvitation.vb</DependentUpon>
     </Compile>
     <Compile Include="UI\CreateBidInvitation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CreateQuotation.Designer.vb">
+      <DependentUpon>CreateQuotation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CreateQuotation.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\HomePage.Designer.vb">
@@ -134,6 +139,12 @@
     <Compile Include="UI\PurchaseOrderPage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="UI\QuotationDetails.Designer.vb">
+      <DependentUpon>QuotationDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\QuotationDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -148,8 +159,14 @@
     <EmbeddedResource Include="UI\BiddingPage.resx">
       <DependentUpon>BiddingPage.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\BidEvaluation.resx">
+      <DependentUpon>BidEvaluation.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\CreateBidInvitation.resx">
       <DependentUpon>CreateBidInvitation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CreateQuotation.resx">
+      <DependentUpon>CreateQuotation.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\HomePage.resx">
       <DependentUpon>HomePage.vb</DependentUpon>
@@ -159,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\PurchaseOrderPage.resx">
       <DependentUpon>PurchaseOrderPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\QuotationDetails.resx">
+      <DependentUpon>QuotationDetails.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +195,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maps-and-flags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\post2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ads1.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

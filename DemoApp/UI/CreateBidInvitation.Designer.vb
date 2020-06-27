@@ -33,6 +33,9 @@ Partial Class CreateBidInvitation
         Me.txtBidTitle = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -83,10 +86,14 @@ Partial Class CreateBidInvitation
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel11.SuspendLayout()
@@ -95,9 +102,7 @@ Partial Class CreateBidInvitation
         CType(Me.dgvCompanyList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
         Me.SuspendLayout()
         '
         'dtpDueTime
@@ -109,7 +114,7 @@ Partial Class CreateBidInvitation
         Me.dtpDueTime.Name = "dtpDueTime"
         Me.dtpDueTime.ShowUpDown = True
         Me.dtpDueTime.Size = New System.Drawing.Size(108, 22)
-        Me.dtpDueTime.TabIndex = 8
+        Me.dtpDueTime.TabIndex = 2
         '
         'Label2
         '
@@ -137,10 +142,11 @@ Partial Class CreateBidInvitation
         Me.dtpDueDate.Location = New System.Drawing.Point(26, 114)
         Me.dtpDueDate.Name = "dtpDueDate"
         Me.dtpDueDate.Size = New System.Drawing.Size(280, 22)
-        Me.dtpDueDate.TabIndex = 7
+        Me.dtpDueDate.TabIndex = 1
         '
         'cmbTransactionFee
         '
+        Me.cmbTransactionFee.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbTransactionFee.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbTransactionFee.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbTransactionFee.FormattingEnabled = True
@@ -148,10 +154,11 @@ Partial Class CreateBidInvitation
         Me.cmbTransactionFee.Location = New System.Drawing.Point(27, 262)
         Me.cmbTransactionFee.Name = "cmbTransactionFee"
         Me.cmbTransactionFee.Size = New System.Drawing.Size(392, 24)
-        Me.cmbTransactionFee.TabIndex = 6
+        Me.cmbTransactionFee.TabIndex = 5
         '
         'cmbBidStatus
         '
+        Me.cmbBidStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbBidStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbBidStatus.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbBidStatus.FormattingEnabled = True
@@ -159,10 +166,11 @@ Partial Class CreateBidInvitation
         Me.cmbBidStatus.Location = New System.Drawing.Point(27, 212)
         Me.cmbBidStatus.Name = "cmbBidStatus"
         Me.cmbBidStatus.Size = New System.Drawing.Size(392, 24)
-        Me.cmbBidStatus.TabIndex = 6
+        Me.cmbBidStatus.TabIndex = 4
         '
         'cmbBidType
         '
+        Me.cmbBidType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbBidType.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cmbBidType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbBidType.FormattingEnabled = True
@@ -170,7 +178,7 @@ Partial Class CreateBidInvitation
         Me.cmbBidType.Location = New System.Drawing.Point(27, 162)
         Me.cmbBidType.Name = "cmbBidType"
         Me.cmbBidType.Size = New System.Drawing.Size(392, 24)
-        Me.cmbBidType.TabIndex = 6
+        Me.cmbBidType.TabIndex = 3
         '
         'Label3
         '
@@ -190,7 +198,7 @@ Partial Class CreateBidInvitation
         Me.txtBidTitle.Location = New System.Drawing.Point(26, 66)
         Me.txtBidTitle.Name = "txtBidTitle"
         Me.txtBidTitle.Size = New System.Drawing.Size(635, 22)
-        Me.txtBidTitle.TabIndex = 2
+        Me.txtBidTitle.TabIndex = 0
         '
         'Label1
         '
@@ -225,6 +233,33 @@ Partial Class CreateBidInvitation
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(996, 309)
         Me.Panel2.TabIndex = 0
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Location = New System.Drawing.Point(26, 161)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(394, 27)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox3.Location = New System.Drawing.Point(26, 260)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(394, 27)
+        Me.PictureBox3.TabIndex = 11
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox2.Location = New System.Drawing.Point(26, 210)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(394, 27)
+        Me.PictureBox2.TabIndex = 10
+        Me.PictureBox2.TabStop = False
         '
         'Label6
         '
@@ -410,10 +445,12 @@ Partial Class CreateBidInvitation
         Me.Panel1.Controls.Add(Me.Panel6)
         Me.Panel1.Controls.Add(Me.Panel8)
         Me.Panel1.Controls.Add(Me.Panel10)
+        Me.Panel1.Controls.Add(Me.Panel12)
+        Me.Panel1.Controls.Add(Me.Panel13)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1370, 749)
+        Me.Panel1.Size = New System.Drawing.Size(1370, 491)
         Me.Panel1.TabIndex = 33
         '
         'Label27
@@ -443,10 +480,10 @@ Partial Class CreateBidInvitation
         Me.Panel11.BackColor = System.Drawing.Color.White
         Me.Panel11.Controls.Add(Me.Button5)
         Me.Panel11.Controls.Add(Me.btnSave)
-        Me.Panel11.Location = New System.Drawing.Point(2, 1258)
+        Me.Panel11.Location = New System.Drawing.Point(2, 1434)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(1349, 50)
-        Me.Panel11.TabIndex = 15
+        Me.Panel11.TabIndex = 21
         '
         'Button5
         '
@@ -457,7 +494,7 @@ Partial Class CreateBidInvitation
         Me.Button5.Location = New System.Drawing.Point(686, 9)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(305, 32)
-        Me.Button5.TabIndex = 1
+        Me.Button5.TabIndex = 23
         Me.Button5.Text = "Cancel"
         Me.Button5.UseVisualStyleBackColor = False
         '
@@ -470,7 +507,7 @@ Partial Class CreateBidInvitation
         Me.btnSave.Location = New System.Drawing.Point(365, 9)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(305, 32)
-        Me.btnSave.TabIndex = 0
+        Me.btnSave.TabIndex = 22
         Me.btnSave.Text = "Save and Publish Bidding Invitation"
         Me.btnSave.UseVisualStyleBackColor = False
         '
@@ -488,7 +525,7 @@ Partial Class CreateBidInvitation
         Me.Panel9.Location = New System.Drawing.Point(181, 1019)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(996, 215)
-        Me.Panel9.TabIndex = 14
+        Me.Panel9.TabIndex = 15
         '
         'Label25
         '
@@ -506,7 +543,7 @@ Partial Class CreateBidInvitation
         Me.Button4.Location = New System.Drawing.Point(476, 135)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(42, 23)
-        Me.Button4.TabIndex = 15
+        Me.Button4.TabIndex = 18
         Me.Button4.Text = "<<"
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -515,7 +552,7 @@ Partial Class CreateBidInvitation
         Me.Button3.Location = New System.Drawing.Point(476, 106)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(42, 23)
-        Me.Button3.TabIndex = 14
+        Me.Button3.TabIndex = 17
         Me.Button3.Text = ">>"
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -553,7 +590,7 @@ Partial Class CreateBidInvitation
         Me.TextBox7.Location = New System.Drawing.Point(80, 44)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(387, 22)
-        Me.TextBox7.TabIndex = 4
+        Me.TextBox7.TabIndex = 16
         '
         'Label28
         '
@@ -581,7 +618,7 @@ Partial Class CreateBidInvitation
         Me.Panel7.Location = New System.Drawing.Point(181, 769)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(996, 227)
-        Me.Panel7.TabIndex = 13
+        Me.Panel7.TabIndex = 10
         '
         'txtItemDescription
         '
@@ -592,7 +629,7 @@ Partial Class CreateBidInvitation
         Me.txtItemDescription.Name = "txtItemDescription"
         Me.txtItemDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtItemDescription.Size = New System.Drawing.Size(940, 89)
-        Me.txtItemDescription.TabIndex = 12
+        Me.txtItemDescription.TabIndex = 14
         '
         'Label24
         '
@@ -623,7 +660,7 @@ Partial Class CreateBidInvitation
         Me.txtItemUOM.Location = New System.Drawing.Point(803, 66)
         Me.txtItemUOM.Name = "txtItemUOM"
         Me.txtItemUOM.Size = New System.Drawing.Size(163, 22)
-        Me.txtItemUOM.TabIndex = 9
+        Me.txtItemUOM.TabIndex = 13
         '
         'Label22
         '
@@ -643,7 +680,7 @@ Partial Class CreateBidInvitation
         Me.txtItemQuantity.Location = New System.Drawing.Point(661, 66)
         Me.txtItemQuantity.Name = "txtItemQuantity"
         Me.txtItemQuantity.Size = New System.Drawing.Size(127, 22)
-        Me.txtItemQuantity.TabIndex = 7
+        Me.txtItemQuantity.TabIndex = 12
         '
         'txtItemName
         '
@@ -652,7 +689,7 @@ Partial Class CreateBidInvitation
         Me.txtItemName.Location = New System.Drawing.Point(26, 66)
         Me.txtItemName.Name = "txtItemName"
         Me.txtItemName.Size = New System.Drawing.Size(620, 22)
-        Me.txtItemName.TabIndex = 4
+        Me.txtItemName.TabIndex = 11
         '
         'Label19
         '
@@ -689,7 +726,7 @@ Partial Class CreateBidInvitation
         Me.Panel5.Location = New System.Drawing.Point(181, 434)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(996, 309)
-        Me.Panel5.TabIndex = 12
+        Me.Panel5.TabIndex = 6
         '
         'Button2
         '
@@ -697,7 +734,7 @@ Partial Class CreateBidInvitation
         Me.Button2.Location = New System.Drawing.Point(555, 216)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(93, 23)
-        Me.Button2.TabIndex = 6
+        Me.Button2.TabIndex = 10
         Me.Button2.Text = "Delete"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -707,7 +744,7 @@ Partial Class CreateBidInvitation
         Me.Button1.Location = New System.Drawing.Point(555, 187)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(93, 23)
-        Me.Button1.TabIndex = 5
+        Me.Button1.TabIndex = 9
         Me.Button1.Text = "Browse"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -719,7 +756,7 @@ Partial Class CreateBidInvitation
         Me.txtAttachments.Multiline = True
         Me.txtAttachments.Name = "txtAttachments"
         Me.txtAttachments.Size = New System.Drawing.Size(523, 99)
-        Me.txtAttachments.TabIndex = 4
+        Me.txtAttachments.TabIndex = 8
         '
         'Label9
         '
@@ -741,7 +778,7 @@ Partial Class CreateBidInvitation
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txtDescription.Size = New System.Drawing.Size(940, 89)
-        Me.txtDescription.TabIndex = 2
+        Me.txtDescription.TabIndex = 7
         '
         'Label16
         '
@@ -789,38 +826,51 @@ Partial Class CreateBidInvitation
         Me.Panel10.Size = New System.Drawing.Size(996, 214)
         Me.Panel10.TabIndex = 4
         '
-        'PictureBox1
+        'Panel12
         '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(26, 161)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(394, 27)
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
+        Me.Panel12.BackColor = System.Drawing.Color.White
+        Me.Panel12.Controls.Add(Me.TextBox2)
+        Me.Panel12.Controls.Add(Me.Label31)
+        Me.Panel12.Location = New System.Drawing.Point(181, 1260)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(996, 147)
+        Me.Panel12.TabIndex = 19
         '
-        'PictureBox3
+        'TextBox2
         '
-        Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox3.Location = New System.Drawing.Point(26, 260)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(394, 27)
-        Me.PictureBox3.TabIndex = 11
-        Me.PictureBox3.TabStop = False
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(26, 37)
+        Me.TextBox2.Multiline = True
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.TextBox2.Size = New System.Drawing.Size(940, 89)
+        Me.TextBox2.TabIndex = 20
         '
-        'PictureBox2
+        'Label31
         '
-        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox2.Location = New System.Drawing.Point(26, 210)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(394, 27)
-        Me.PictureBox2.TabIndex = 10
-        Me.PictureBox2.TabStop = False
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label31.Location = New System.Drawing.Point(23, 16)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(112, 18)
+        Me.Label31.TabIndex = 0
+        Me.Label31.Text = "Note to Bidder"
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.DarkGray
+        Me.Panel13.Location = New System.Drawing.Point(187, 1265)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(996, 147)
+        Me.Panel13.TabIndex = 7
         '
         'CreateBidInvitation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1370, 749)
+        Me.ClientSize = New System.Drawing.Size(1370, 491)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "CreateBidInvitation"
@@ -828,6 +878,9 @@ Partial Class CreateBidInvitation
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -841,9 +894,8 @@ Partial Class CreateBidInvitation
         Me.Panel7.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -913,4 +965,8 @@ Partial Class CreateBidInvitation
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label27 As Label
     Friend WithEvents Label26 As Label
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Panel13 As Panel
 End Class

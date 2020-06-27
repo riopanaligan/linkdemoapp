@@ -22,7 +22,47 @@ DemoApp
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:DemoApp.My.Resources.Resources.ads1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:DemoApp.My.Resources.Resources.background3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DemoApp.My.Resources.Resources.chain">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DemoApp.My.Resources.Resources.location">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DemoApp.My.Resources.Resources.maps_and_flags">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DemoApp.My.Resources.Resources.picture">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DemoApp.My.Resources.Resources.post1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DemoApp.My.Resources.Resources.post2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:DemoApp.My.Resources.Resources.search">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

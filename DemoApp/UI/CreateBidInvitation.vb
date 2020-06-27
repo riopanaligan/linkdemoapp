@@ -49,7 +49,8 @@
                                                                 Company4, 
                                                                 Company5,
                                                                 User,
-                                                                Company ) 
+                                                                Company,
+                                                                DateCreated ) 
                                                       VALUES (  '" & txtBidTitle.Text & "', 
                                                                 '" & dtpDueDate.Value.Date.ToString("yyyy-MM-dd") & "',
                                                                 '" & dtpDueTime.Value.ToString("HH:mm:ss") & "',
@@ -67,7 +68,8 @@
                                                                 '" & company4 & "',
                                                                 '" & company5 & "', 
                                                                 '" & lblUser.Text & "',
-                                                                'Company ABC')"
+                                                                'Company ABC',
+                                                                curdate())"
 
             dbutility.ExecuteNonQuery(query)
             MessageBox.Show("New Bid Invitation successfully saved and published!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
@@ -92,15 +94,17 @@
         If cmbBidType.Text.Trim = "Public" Then
             Panel9.Visible = False
             Panel10.Visible = False
-            Panel11.Location = New Point(2, 1019)
+            Panel11.Location = New Point(2, 1434 - 241)
+            Panel12.Location = New Point(181, 1260 - 241)
+            Panel13.Location = New Point(187, 1265 - 241)
         Else
             Panel9.Visible = True
             Panel10.Visible = True
-            Panel11.Location = New Point(2, 1258)
+            Panel11.Location = New Point(2, 1434)
+            Panel12.Location = New Point(181, 1260)
+            Panel13.Location = New Point(187, 1265)
         End If
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
 
-    End Sub
 End Class

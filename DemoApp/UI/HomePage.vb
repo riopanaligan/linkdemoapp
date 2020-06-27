@@ -19,37 +19,43 @@
 
     Private Sub lblOpenBids_Click(sender As Object, e As EventArgs) Handles lblOpenBids.Click
         Dim biddingpage As New BiddingPage
+        biddingpage.lblUserHeader.Text = lblUserHeader.Text
         biddingpage.Show()
         biddingpage.TabControl1.SelectedIndex = 0
         biddingpage.PictureBox1.Visible = True
-        biddingpage.lblUserHeader.Text = lblUserHeader.Text
         Me.Close()
     End Sub
 
     Private Sub lblClosedBids_Click(sender As Object, e As EventArgs) Handles lblClosedBids.Click
         Dim biddingpage As New BiddingPage
+        biddingpage.lblUserHeader.Text = lblUserHeader.Text
         biddingpage.Show()
         biddingpage.TabControl1.SelectedIndex = 1
         biddingpage.PictureBox2.Visible = True
-        biddingpage.lblUserHeader.Text = lblUserHeader.Text
         Me.Close()
     End Sub
 
     Private Sub lblBidInvitations_Click(sender As Object, e As EventArgs) Handles lblBidInvitations.Click
         Dim biddingpage As New BiddingPage
+        biddingpage.lblUserHeader.Text = lblUserHeader.Text
         biddingpage.Show()
         biddingpage.TabControl1.SelectedIndex = 2
         biddingpage.PictureBox3.Visible = True
-        biddingpage.lblUserHeader.Text = lblUserHeader.Text
         Me.Close()
     End Sub
 
     Private Sub lblBidEvaluation_Click(sender As Object, e As EventArgs) Handles lblBidEvaluation.Click
         Dim biddingpage As New BiddingPage
+        biddingpage.lblUserHeader.Text = lblUserHeader.Text
         biddingpage.Show()
         biddingpage.TabControl1.SelectedIndex = 3
         biddingpage.PictureBox4.Visible = True
-        biddingpage.lblUserHeader.Text = lblUserHeader.Text
         Me.Close()
     End Sub
+
+    Private Sub lblPurchaseOrder_Click(sender As Object, e As EventArgs) Handles lblPurchaseOrder.Click
+        PurchaseOrderPage.lblUserHeader.Text = lblUserHeader.Text
+        PurchaseOrderPage.Show()
+    End Sub
+
 End Class
