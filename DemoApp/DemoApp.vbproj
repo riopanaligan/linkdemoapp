@@ -91,6 +91,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="profileSetup.Designer.vb">
+      <DependentUpon>profileSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="profileSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="UI\AccountingPage.Designer.vb">
       <DependentUpon>AccountingPage.vb</DependentUpon>
     </Compile>
@@ -152,6 +158,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profileSetup.resx">
+      <DependentUpon>profileSetup.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\AccountingPage.resx">
       <DependentUpon>AccountingPage.vb</DependentUpon>
@@ -219,6 +228,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ads1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mobile-payment-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-billing-machine-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-invoice-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-purchase-order-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-new-message-40.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
